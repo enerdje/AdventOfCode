@@ -11,5 +11,8 @@ namespace AdventOfCode.Tests
 
 		public static List<int> GetListIntValues(string path) =>
 			new List<int>(File.ReadLines(path).Select(int.Parse).ToList());
+
+		public static List<string> GetListStringValues(string path) =>
+			new List<string>(File.ReadLines(path).ToList());
 	}
 }
